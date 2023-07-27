@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random advert</title>
+    <!--<link rel="stylesheet" type="text/css" href="style.css">-->
+</head>
+<style>
+body {
+    background-image: url("bliss.jpg");
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.window {
+    background-color: #FFF7DC; /* Window background color */
+    border: 1px solid #666;
+    width: 650px; /* Adjust the size as needed */
+    margin: 50px auto;
+    border-radius: 4px 4px 0 0;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.title-bar {
+    background-color: #0000FF; 
+    color: #f0f0f0;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px 4px 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.window-title {
+    padding-left: 5px;
+}
+
+.window-controls {
+    display: flex;
+    padding-right: 5px;
+}
+
+.window-controls div {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.window-close {
+    background-color: #ff3333;
+}
+
+.window-minimize {
+    background-color: #ffcc00;
+}
+
+.window-maximize {
+    background-color: #33cc33;
+}
+
+.content {
+    padding: 10px;
+}
+
+h1, p {
+    margin: 10px 0;
+}
+vids {
+  display: block;
+  margin: 0 auto;
+}
+summary, .buton {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #000FFF;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+</style>
+<body>
+    <div class="window">
+        <div class="title-bar">
+            <div class="window-title">Random_Adverts.exe</div>
+            <div class="window-controls">
+                <div class="window-close"></div>
+                <div class="window-minimize"></div>
+                <div class="window-maximize"></div>
+            </div>
+        </div>
+        <div class="content">
+            <h1>Random advert of choice:</h1>
+            <div class="vids">
+            <video id="videoPlayer" controls width="640" height="360" autoplay></video>
+            </div>
+            <p>All these adverts are the property of the companies who distributed them and we accept no liability for copyrights</p>
+            <p>All videos are taken from vid.puffyan.us</p>
+            <p> DISCLAIMER as of 21/07/2023 there are only 29 different adverts this does not limit how many you may see as it will loop just how many there are.
+
+            <script>
+            const videoUrls = [
+                'https://vid.puffyan.us/latest_version?id=qIVDxL2lgN4&itag=22',
+                'https://vid.puffyan.us/latest_version?id=TnzFRV1LwIo&itag=18&local=true',
+                'https://vid.puffyan.us/latest_version?id=hcE1Z3KDYrc&itag=22',
+                'https://vid.puffyan.us/latest_version?id=UMLtkp4AFkc&itag=22',
+                'https://vid.puffyan.us/latest_version?id=Y4drNFXd6dw&itag=22',
+                'https://vid.puffyan.us/latest_version?id=IWQtX0-9aZ0&itag=18',
+                'https://vid.puffyan.us/latest_version?id=QVNDAW-rcOs&itag=22',
+                'https://vid.puffyan.us/latest_version?id=5Z62-m4D7tQ&itag=22',
+                'https://vid.puffyan.us/latest_version?id=I59XOttwZLg&itag=22',
+                'https://vid.puffyan.us/latest_version?id=TBRCZLzn5pM&itag=18',
+                'https://vid.puffyan.us/latest_version?id=pO9hOYCk9PQ&itag=18',
+                'https://vid.puffyan.us/latest_version?id=brsI6z13Su8&itag=18',
+                'https://vid.puffyan.us/latest_version?id=62xLWZgx4Ko&itag=18',
+                'https://vid.puffyan.us/latest_version?id=hFdPlLAXSYY&itag=22',
+                'https://vid.puffyan.us/latest_version?id=kIv3m2gMgUU&itag=18',
+                'https://vid.puffyan.us/latest_version?id=DpQV7qnAw5g&itag=22',
+                'https://vid.puffyan.us/latest_version?id=YQo0TfuueaY&itag=22',
+                'https://vid.puffyan.us/latest_version?id=ykOFlX4MfPQ&itag=18',
+                'https://vid.puffyan.us/latest_version?id=D9DoAk0C0Fk&itag=22',
+                'https://vid.puffyan.us/latest_version?id=MixNh9L7G5M&itag=18',
+                'https://vid.puffyan.us/latest_version?id=ceCz5x2lbfk&itag=18',
+                'https://vid.puffyan.us/latest_version?id=vjU3stxlI9w&itag=18',
+                'https://vid.puffyan.us/latest_version?id=Hq2SlCja3zo&itag=22',
+                'https://vid.puffyan.us/latest_version?id=sHDkh85WnLY&itag=22',
+                'https://vid.puffyan.us/latest_version?id=dxn80CjaKwM&itag=22',
+                'https://vid.puffyan.us/latest_version?id=RswN27PntNY&itag=22',
+                'https://vid.puffyan.us/latest_version?id=QMJebfQixa8&itag=18',
+                'https://vid.puffyan.us/latest_version?id=dJMw__xfFrI&itag=22',
+                'https://vid.puffyan.us/latest_version?id=HMnMgX7GiOA&itag=22&local=true',
+            ];
+            function playRandomVideo() {
+                const randomIndex = Math.floor(Math.random() * videoUrls.length);
+                const videoPlayer = document.getElementById('videoPlayer');
+                videoPlayer.src = videoUrls[randomIndex];
+            }
+
+            playRandomVideo();
+            </script>
+            <p></p>
+            <button onclick="playRandomVideo()">I want a different ad!</button>
+            <p></p>
+            <details>
+            <summary> Why the windows xp look </summary>
+            <p class="info">
+            i dont know
+            </p>
+            </details>
+            <p> </p>
+            <button class="buton" onclick="window.location.href = 'https://advert.randspoon.co.uk/update.html';">Updates!</button>
+            <a href="newversion.html">upgrade to the newer version!</a>
+        </div>
+    </div>
+    <a href="mailto: customerhelp@randspoon.co.uk"><img src="mall.png" alt="email"  style="width:120px;height:120px"; </a>
+</body>
+</html>
