@@ -1,6 +1,6 @@
 <h1 style="text-align:center;">Better-Advert</h1>
 <p align="center">
-    ![GitHub](https://img.shields.io/github/license/therandomspoon/better-advert)
+![GitHub](https://img.shields.io/github/license/therandomspoon/better-advert)
 </p>
 
 
