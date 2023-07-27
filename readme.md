@@ -1,6 +1,7 @@
 <h1 style="text-align:center;">Better-Advert</h1>
 
-![GitHub](https://img.shields.io/github/license/therandomspoon/better-advert) ![GitHub all releases](https://img.shields.io/github/downloads/therandomspoon/better-advert/total) ![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/t/therandomspoon/better-advert) ![GitHub issues](https://img.shields.io/github/issues/therandomspoon/better-advert) ![GitHub closed issues](https://img.shields.io/github/issues-closed/therandomspoon/better-advert)
+![GitHub](https://img.shields.io/github/license/therandomspoon/better-advert) ![GitHub all releases](https://img.shields.io/github/downloads/therandomspoon/better-advert/total) ![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/t/therandomspoon/better-advert) ![GitHub issues](https://img.shields.io/github/issues/therandomspoon/better-advert) ![GitHub closed issues](https://img.shields.io/github/issues-closed/therandomspoon/better-advert) ![GitHub release (latest by SemVer including pre-releases)](https://img.shields.io/github/downloads-pre/therandomspoon/better-advert/version/total)
+
 
     This project uses vid.puffyan.us (see above) ,a invidious instance , for its videos. 
     Our site takes no responsibilty for copyright since we simply use invidious's videos.
