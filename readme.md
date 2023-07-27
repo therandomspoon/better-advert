@@ -1,8 +1,6 @@
 <h1 style="text-align:center;">Better-Advert</h1>
 
-![GitHub](https://img.shields.io/github/license/therandomspoon/better-advert)
-
-
+![GitHub](https://img.shields.io/github/license/therandomspoon/better-advert) ![GitHub all releases](https://img.shields.io/github/downloads/therandomspoon/better-advert/total)
 
     This project uses vid.puffyan.us (see above) ,a invidious instance , for its videos. 
     Our site takes no responsibilty for copyright since we simply use invidious's videos.
